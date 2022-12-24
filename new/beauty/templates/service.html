@@ -1,0 +1,25 @@
+ {% extends "base.html" %}
+ {% load static %}
+
+
+ {% block title %}
+ 	BOOKING
+ {% endblock title %}
+
+ {% block body %}
+	<div class="service">
+		<h4>SERVICES</h4>
+		<div class="services">
+			<p>Welcome to Beautiful Making. <br>We specialize in all kind of custom services i.e</p>
+		</div>		
+			<ul>
+				<li><a href="{% url 'beauty:book_time' %}">Tailoring <span>(Male & Female)</span></a></li>
+				<li><a href="{% url 'beauty:book_time' %}">Hair Style</a></li>
+				<li><a href="{% url 'beauty:book_time' %}">Percurist</a></li>
+				<li><a href="{% url 'beauty:book_time' %}">Heena</a></li>
+				<li><a href="{% url 'beauty:book_time' %}">Neckles <span>(Making)</span></a></li>
+				<li><a href="{% url 'beauty:book_time' %}">Hand ring <span>(Making)</span></a></li>
+		</ul>
+	</div>
+
+ {% endblock body %}

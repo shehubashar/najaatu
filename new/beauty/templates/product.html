@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+ {% load static %}
+
+
+ {% block title %}
+ 	Product
+ {% endblock title %}
+
+{% block body %}
+ 	<div class="Whoops">
+ 		<h1>500 Whoops!!!</h1>
+ 		<p>Sorry we don`t have product at the moment<br>please subscribe to our <b>Newsletter</b> to know about our product if we release one.</p>
+ 		<a href="{% url 'beauty:home' %}" class="button">Back</a>
+	</div>
+{% endblock body %}
